@@ -22,14 +22,25 @@
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
       background-image: url('cartoon-country-house.svg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
-      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
-      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
-      color: var(--text-color);
-      line-height: 1.6;
+      mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+      z-index: -1;
     }
     header {
       background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -141,7 +152,6 @@
           <h3>Data Visualization Dashboard</h3>
           <p>Built an interactive dashboard using Google Studio and Google Cloud APIs to visualize data.</p>
         </div>
-        <!-- Duplicates for seamless scroll -->
         <div class="project-card">
           <h3>Full stack e-commerce</h3>
           <p>Developed a full LAMP stack to sell costume jewellery.</p>
