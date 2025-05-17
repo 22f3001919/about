@@ -7,9 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary-color: #4f46e5; /* Blue */
-      --secondary-color: #f97316; /* Orange */
-      --accent-color: #10b981; /* Green */
+      --primary-color: #4f46e5;
+      --secondary-color: #f97316;
+      --accent-color: #10b981;
       --background-color: #f3f4f6;
       --text-color: #1f2937;
       --card-background: #ffffff;
@@ -41,10 +41,12 @@
       opacity: 0.95;
     }
     .hero-img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-top: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
     }
     section {
       max-width: 960px;
@@ -162,7 +164,7 @@
     <p>Email: pillory.diaries-0x@icloud.com | GitHub: github.com/22f3001919</p>
   </section>
   <footer>
-    <p>The country house image is used according to License: Attribution 4.0 International (CC BY 4.0). It can be found here:<a href="https://mysvg.org/buildings/cartoon-country-house">https://mysvg.org/buildings/cartoon-country-house</a></p>
+    <p>Image: "Cartoon Country House" by <a href="https://mysvg.org/buildings/cartoon-country-house" target="_blank" rel="noopener">mysvg.org</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</p>
     <p>&copy; 2025 Carlton D'Silva. All rights reserved.</p>
   </footer>
 </body>
