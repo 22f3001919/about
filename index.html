@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlton D'Silva | About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4f46e5; /* Blue */
+      --secondary-color: #f97316; /* Orange */
+      --accent-color: #10b981; /* Green */
+      --background-color: #f3f4f6;
+      --text-color: #1f2937;
+      --card-background: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      opacity: 0.95;
+    }
+    .hero-img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    .carousel-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    .carousel-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 30s linear infinite;
+      will-change: transform;
+    }
+    .project-card {
+      flex: 0 0 300px;
+      margin-right: 1rem;
+      background: var(--card-background);
+      border-left: 5px solid var(--secondary-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .contact, .skills {
+      background: var(--card-background);
+      border-left: 5px solid var(--accent-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--primary-color);
+      color: #fff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes scroll {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carlton D'Silva</h1>
+    <p>Software Developer | Data Science | AI/ML | Full Stack</p>
+    <img class="hero-img" src="cartoon-country-house.svg" alt="Cartoon Country House" />
+  </header>
+  <section class="skills">
+    <h2>Skills</h2>
+    <p>Python, LLM, Docker, Git, Linux, C++, SQL, Google Cloud Platform, ML/AI, Teaching</p>
+  </section>
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="project-card">
+          <h3>Full stack e-commerce</h3>
+          <p>Developed a full LAMP stack to sell costume jewellery.</p>
+        </div>
+        <div class="project-card">
+          <h3>Web Apps</h3>
+          <p>Multiple web apps that use databases for various small non commercial projects.</p>
+        </div>
+        <div class="project-card">
+          <h3>ML Malware Prediction</h3>
+          <p>Used various classifier models to predict malware.</p>
+        </div>
+        <div class="project-card">
+          <h3>Data Visualization Dashboard</h3>
+          <p>Built an interactive dashboard using Google Studio and Google Cloud APIs to visualize data.</p>
+        </div>
+        <!-- Duplicates for seamless scroll -->
+        <div class="project-card">
+          <h3>Full stack e-commerce</h3>
+          <p>Developed a full LAMP stack to sell costume jewellery.</p>
+        </div>
+        <div class="project-card">
+          <h3>Web Apps</h3>
+          <p>Multiple web apps that use databases for various small projects.</p>
+        </div>
+        <div class="project-card">
+          <h3>ML Malware Prediction</h3>
+          <p>Used classifier models to predict malware.</p>
+        </div>
+        <div class="project-card">
+          <h3>Data Visualization Dashboard</h3>
+          <p>Built an interactive dashboard using Google Studio and Google Cloud APIs to visualize data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email:  | GitHub: github.com/22f3001919</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Carlton D'Silva. All rights reserved.</p>
+  </footer>
+</body>
+</html>
